@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as WebBrowser from 'expo-web-browser';
 import * as Google from 'expo-auth-session/providers/google';
 import { StyleSheet } from 'react-native';
-import { Button, Icon, Text, View } from '../../../components';
+import { Button, Text, View } from '../../../components';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -32,7 +32,6 @@ export default function App() {
         text="Sign in with Google"
         onPress={promptAsync}
       />
-      <Icon name="Google" />
     </View>
   );
 }
